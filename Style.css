@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: violet;
+    width: 100%;
+    height: 100vh;
+}
+
+.container h1{
+    font-weight: 900;
+    font-size: 4rem;
+    color: violet;
+    text-shadow: 3px 5px 9px rgba(235, 10, 216, 0.39);;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes{
+    display: flex;
+    background-color: violet;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    left: 0px;
+    width: 200px;
+    height: 250px;
+    background-color: violet;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 500ms ease;
+    color: rgb(236, 53, 236);
+    box-shadow: 1px 1px 20px 3px rgba(235, 10, 216, 0.39);
+}
+
+.box:not(:first-child) {
+    margin-left: -50px;
+}
+
+.box:hover{
+    transform: translateY(-20px);
+}
+
+.card:hover ~ .card{
+    left: 50px;
+}
